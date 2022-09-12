@@ -161,9 +161,11 @@ a:active {
 }
 
 .about-me {
+    object-fit: cover;
     color: var(--white);
     background-color: var(--black);
     text-align: center;
+    margin: auto;
 }
 
 .about-me h3 {
@@ -184,6 +186,7 @@ a:active {
     background-color: var(--black);
     padding: 5px;
     text-align: center;
+    margin: auto;
 }
 
 .form {
