@@ -1,3 +1,4 @@
+/* Here is where you can see all the colors in the pallete of the website. */
 :root {
     --black: #000000;
     --white: #ffffff;
@@ -12,7 +13,7 @@
     --aqua:#00FFFF;
     --white:#ffffff;
 }
-
+/* Here is the fonts used in the body of the website */
 body {
     background-color: var(--bluepurple);
     font-family: Helvetica, Arial, sans-serif;
@@ -29,7 +30,7 @@ header {
     grid-template-areas: "stack";
     place-items: center;
 } 
-
+/* This stacks all the items in the center */
 header > * { grid-area: stack }
 
 .avatar img {
@@ -43,18 +44,18 @@ header > * { grid-area: stack }
     border: solid var(--white) 5px;
     
 }
-
+/* This is the font that is on top of the hero. */
 .hero-overlay-text {
     display: flex;
     justify-content: center;
     color: var(--white);
     margin-top: 250px;
 }
-
+/* This makes it so that the banner fits all screen sizes */
 .hero-banner {
     place-self: stretch;
 }
-
+/* This changes the heros image sizes. */
 .hero-banner img {
     display: block;
     width: 0;
@@ -63,13 +64,14 @@ header > * { grid-area: stack }
     min-height: 100%;
     object-fit: cover;
 }
-
+/* Flex wrap is on main so the boxes can reorder in size. */
 main {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
 }
 
+/* This is the side bar at default its on the left and the media queries move it to the bottom. */
 aside {
     background-color:var(--darkpurple);
     color: var(--lightpurple);
@@ -81,6 +83,7 @@ aside {
     padding: 20px;
 }
 
+/* This si the sidebars links */
 aside a {
     text-decoration: none;
     display: block;
@@ -88,10 +91,12 @@ aside a {
     text-align: center;
 }
 
+/* This puts a border on the avatar */
 img {
     border-style: solid (var(--white)) 4px;
 }
 
+/* All a: below shows how to customise links in color based on how they are interacted by. */
 a:link {
     text-decoration: none;
     color:var(--lightpurple)
@@ -106,6 +111,7 @@ a:active {
     color:var(--white)
 }
 
+/* This changes the hero of the website, it scales from flex */
 .box-banner {
     flex: 1 1 1200px;
     width: 1200px;
@@ -115,11 +121,11 @@ a:active {
     grid-template: "stack";
     place-items: center;
 } 
-
+/* As before this keeps all items in a stack in the center */
 .box-banner > a { grid-area : stack }
 .box-banner > img { grid-area: stack }
 .box-banner > span { grid-area: stack }
-
+/* This changes the text on the banner and gives it a background color */
 .box-banner h2 {
     background-color: var(--black);
     font-weight: normal;
@@ -130,7 +136,7 @@ a:active {
     height: auto;
     max-width: 100%;
 }
-
+/* This changes the box around and makes it so it scales to all sizes. */
 .box {
     flex: 1 1 600px;
     width: 600px;
@@ -140,15 +146,16 @@ a:active {
     grid-template: "stack";
     place-items: center;
 }
-
+/* As before this centers the stacked items. */
 .box > a { grid-area: stack }
 .box > img { grid-area: stack }
 .box > span { grid-area: stack }
 
+/* This changes the font color */
 .box a {
     color:var(--white);
 }
-
+/* This changes the background color of the boxes to black */
 .box h2 {
     background-color: var(--black);
     font-weight: normal;
@@ -159,13 +166,14 @@ a:active {
     height: auto;
     max-width: 100%;
 }
-
+/*This is the wrapper that aligns the about me and the contact me into one. */
 .section-wrapper {
     display: flex;
     flex-direction: column;
     margin: auto;
 }
 
+/* This is the about me and allows it to scales to many sizes. */
 .about-me {
     object-fit: cover;
     color: var(--white);
@@ -185,6 +193,7 @@ a:active {
     margin: auto;
 }
 
+/* This is the contact me and allows it to be different colors and centered */
 .contact-me {
     color: var(--white);
     background-color: var(--black);
@@ -198,6 +207,7 @@ a:active {
     padding:25px;
 }
 
+/* This contact me image scales from this. */
 .contact-me img {
     display: block;
     height: auto;
@@ -210,10 +220,12 @@ a:active {
     font-weight: normal;
 }
 
+/* This centers the footer */
 footer {
     text-align: center;
 }
 
+/* Below is many media queries 768px is for smart phones and 1024 is for tablets. The rest are custom for Nest and other devices. */
 @media screen and (max-width: 768px) {
     aside {
         text-align: center;
@@ -239,6 +251,7 @@ footer {
     }
 }
 
+/* This size is for tablets */
 @media screen and (max-width:1024px) {
     aside {
         text-align: center;

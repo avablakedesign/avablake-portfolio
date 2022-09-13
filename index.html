@@ -3,34 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- This is where the style sheet and reset sheet are linked. -->
         <link rel ="stylesheet" type="text/css" href="./assets/css/reset.css" />
         <link rel ="stylesheet" type="text/css" href="./assets/css/style.css" />
      <title>Ava Blake's Portfolio</title>
     </head>
+    <!-- Here is the body of the project.-->
     <body>
+        <!-- Here is the header of the project.-->
         <header>
+            <!-- Here is the hero banner of the site -->
             <section class="hero-banner">
                 <img src="./assets/Images/japan-leica.jpg">
             </section>
             <div class="avatar">
                 <img src="./assets/Images/eatsleepcode-2.jpg">
-            </div>    
+            </div> 
+            <!-- &nbsp; makes it so there is spaces, this is the header specifically. -->   
             <div class="hero-overlay-text">
                 <h1>&nbsp;Ava Blake's Portfolio&nbsp;</h1>
             </div>         
         </header>
+        <!-- Here is the main of the project.-->
         <main>
+            <!-- Here is the sidebar that can go to the bottom of the page. These link to sections of the site. -->
             <aside>
                 <a href ="#my-portfolio">My Portfolio</a>
                 <a href ="#about-me">About Me</a>
                 <a href ="#contact-me">Contact Me</a>
                 <a href ="https://github.com/avablakedesign">My Github</a>
             </aside>
+            <!-- box banner is seperate from box. -->
             <div class="box-banner">
                 <a id="my-portfolio"></a>
                 <img src="./assets/Images/blackwater-banner-final.jpg" alt="" />
                 <span><h2>&nbsp;Next Project - Strong Password Generator&nbsp;</h2></span>    
             </div>
+            <!-- This is where box begins. These are linked to my completed projects and the rest are placeholders. -->
             <div class="box">
                 <a href ="https://avablakedesign.github.io/prework-study-guide">
                     <img src="./assets/Images/black-water-3_cropped-1.jpg" alt="" />
@@ -43,11 +52,13 @@
                 <a href ="https://avablakedesign.github.io/module-1-challenge">
                     <img src="./assets/Images/black-water-3_cropped-2.jpg"/>
                     </a>
+                    <!-- I use roman numerals to label the projects to fit the design of the website. -->
                     <span><h2><a href ="https://avablakedesign.github.io/module-1-challenge">
                         &nbsp;Project I - Refactoring Horiseon&nbsp;</a></h2></span>  
             </div>
             <div class="box">
                 <a href ="https://avablakedesign.github.io/avablake-portfolio">
+                    <!-- The image is linked as well for the user to click easily. -->
                     <img src="./assets/Images/black-water-3_cropped-1.jpg">
                     </a>
                     <span><h2><a href ="https://avablakedesign.github.io/avablake-portfolio">
@@ -105,25 +116,32 @@
                 <img src="assets/Images/black-water-3_cropped-2.jpg">
                 <span><h2>&nbsp;Project XV&nbsp;</h2></span>
             </div>
+            <!-- This wrapper allows the next two sections to align and scale in size.-->
             <div class="section-wrapper">
+                <!-- Here is the about me section below.-->
                 <section class="about-me">
                     <a id="about-me"><h3>&nbsp;About Me&nbsp;</h3></a>
                     <img src ="assets/Images/tatsuo-suzuki-tokyo_3.jpg"/>
                     <p>I am a web developer. I love programming and fashion and monochrome photography.</p>
                 </section>
+                <!-- Here is the contact me form section below.-->
                 <section class="contact-me">
                     <a id="contact-me"><h3>&nbsp;Contact Me&nbsp;</h3></a>
                     <img src ="assets/Images/flower.gif">
                     <div class="form">
+                        <!-- This opens email software -->
                         <form action="mailto:avablakedesign@protonmail.com" method="get" enctype="text/plain">
                             <div>
+                                <!-- This is a form to enter information. -->
                                 <label for="name">Name:
                                     <input type="text" name="name" id="name" />
                                 </label>
                             </div>
+                                <!-- This is where you fill out your email. -->
                                 <label for="email">Email:</label>
                                     <input type="text" name="email" id="email" />
                                 </label>
+                                <!-- This is where you fill out comments. -->
                                 <label>Comments:</label><br />
                                 <textarea name="comments" rows="4" cols="22">
                                 </textarea>
@@ -132,12 +150,15 @@
                                 <input type="submit" name="submit" value="Send" />
                             </div>
                         </form>
-                    </div>           
+                    </div>
+                    <!-- This is an image at the bottom of the website. -->           
                     <img src ="assets/Images/japan-women.jpg"/>
                 </section>
-            </div>    
+            </div>
+            <!-- This main has to be here for the sidebar to go to the bottom of the page. -->    
         </main> 
     </body>
+    <!-- Here is the footer of the project. -->
     <footer>
         <p>❤️ Created by Ava Blake Design</p>
     </footer>
