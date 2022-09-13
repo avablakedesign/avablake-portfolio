@@ -160,12 +160,17 @@ a:active {
     max-width: 100%;
 }
 
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
 .about-me {
     object-fit: cover;
     color: var(--white);
     background-color: var(--black);
     text-align: center;
-    margin: auto;
 }
 
 .about-me h3 {
@@ -177,8 +182,6 @@ a:active {
     display: block;
     height: auto;
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .contact-me {
@@ -186,7 +189,6 @@ a:active {
     background-color: var(--black);
     padding: 5px;
     text-align: center;
-    margin: auto;
 }
 
 .form {
