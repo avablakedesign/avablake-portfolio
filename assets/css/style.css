@@ -13,8 +13,9 @@
     --aqua:#00FFFF;
     --white:#ffffff;
 }
-/* Here is the fonts used in the body of the website */
+/* Here is the fonts used in the body of the website. */
 body {
+    background-image: url("https://avablake.github.io/blackwater.png");
     background-color: var(--bluepurple);
     font-family: Helvetica, Arial, sans-serif;
     margin-left: 125px;
@@ -30,7 +31,7 @@ header {
     grid-template-areas: "stack";
     place-items: center;
 } 
-/* This stacks all the items in the center */
+/* This stacks all the items in the center. */
 header > * { grid-area: stack }
 
 .avatar img {
@@ -91,7 +92,7 @@ aside a {
     text-align: center;
 }
 
-/* This puts a border on the avatar */
+/* This puts a border on the avatar. */
 img {
     border-style: solid (var(--white)) 4px;
 }
@@ -111,7 +112,7 @@ a:active {
     color:var(--white)
 }
 
-/* This changes the hero of the website, it scales from flex */
+/* This changes the hero of the website, it scales from flex. */
 .box-banner {
     flex: 1 1 1200px;
     width: 1200px;
@@ -121,11 +122,11 @@ a:active {
     grid-template: "stack";
     place-items: center;
 } 
-/* As before this keeps all items in a stack in the center */
+/* As before this keeps all items in a stack in the center. */
 .box-banner > a { grid-area : stack }
 .box-banner > img { grid-area: stack }
 .box-banner > span { grid-area: stack }
-/* This changes the text on the banner and gives it a background color */
+/* This changes the text on the banner and gives it a background color. */
 .box-banner h2 {
     background-color: var(--black);
     font-weight: normal;
@@ -155,7 +156,7 @@ a:active {
 .box a {
     color:var(--white);
 }
-/* This changes the background color of the boxes to black */
+/* This changes the background color of the boxes to black. */
 .box h2 {
     background-color: var(--black);
     font-weight: normal;
@@ -193,7 +194,7 @@ a:active {
     margin: auto;
 }
 
-/* This is the contact me and allows it to be different colors and centered */
+/* This is the contact me and allows it to be different colors and centered. */
 .contact-me {
     color: var(--white);
     background-color: var(--black);
@@ -220,7 +221,7 @@ a:active {
     font-weight: normal;
 }
 
-/* This centers the footer */
+/* This centers the footer. */
 footer {
     text-align: center;
 }
@@ -251,7 +252,7 @@ footer {
     }
 }
 
-/* This size is for tablets */
+/* This size is for tablets. */
 @media screen and (max-width:1024px) {
     aside {
         text-align: center;
